@@ -1,0 +1,244 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col" align="center">
+      <img src="/assets/images/realtime-gaming-jackpots.jpg" alt="bugbusters">
+      <div class="top-left tooSmall"><img src="/assets/images/bug.png" alt="bugbusters"></div>
+      <div class="top-right tooSmall"><img src="/assets/images/bug.png" alt="bugbusters"></div>
+    </div>
+  </div>
+</div>
+
+<div class="container" align="center">
+  <countdown units="Days | Hours | Minutes | Seconds"  end="July 21, 2018"></countdown>
+</div>
+
+
+
+
+<div *ngIf="showLoadingComponent" class="container intro">
+  <div class="row">
+    <div class="col" align="center">
+      <h1>Loading Components, please wait</h1>
+      <div class="loader"></div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="showLoadingPriority" class="container intro">
+  <div class="row">
+    <div class="col" align="center">
+      <h1>Loading Priorities, please wait</h1>
+      <div class="loader"></div>
+    </div>
+  </div>
+</div>
+
+<div *ngIf="showLoadingFilter" class="container intro">
+  <div class="row">
+    <div class="col" align="center">
+      <h1>Loading Assignees and reporters, please wait</h1>
+      <div class="loader"></div>
+    </div>
+  </div>
+</div>
+<!------------------------------------------------------------------------------------------->
+<div *ngIf="showComponent" class="container jumbotron">
+  <div class="row">
+    <div class="col" align="center">
+      <h1>Defects Per Component</h1>
+      <br>
+    </div>
+    <div class="container" align="center">
+      <div class="row">
+        <div class="col-md">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr class="text-center">
+                <th>{{comp0}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary text-center">
+                <td><font size="20">{{totalcomp0}}</font></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr class="text-center">
+                <th>{{comp1}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary text-center">
+                <td><font size="20">{{totalcomp1}}</font></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr class="text-center">
+                <th>{{comp2}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary text-center">
+                <td><font size="20">{{totalcomp2}}</font></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <div class="container" align="center">
+      <div class="row">
+        <div class="col-md">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr class="text-center">
+                <th>{{comp3}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary text-center">
+                <td><font size="20">{{totalcomp3}}</font></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr class="text-center">
+                <th>{{comp4}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary text-center">
+                <td><font size="20">{{totalcomp4}}</font></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr class="text-center">
+                <th>{{comp5}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary text-center">
+                <td><font size="20">{{totalcomp5}}</font></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!----------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div *ngIf="showPriority" class="container jumbotron">
+  <div class="row">
+    <div class="col" align="center">
+      <h1>Defects Per Priority</h1>
+      <br>
+    </div>
+    <div class="container" align="center">
+      <div class="row">
+        <div class="col-md">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr class="text-center">
+                <th>{{pri0}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary text-center">
+                <td><font size="20">{{totalpri0}}</font></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr class="text-center">
+                <th>{{pri1}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary text-center">
+                <td><font size="20">{{totalpri1}}</font></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr class="text-center">
+                <th>{{pri2}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary text-center">
+                <td><font size="20">{{totalpri2}}</font></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!----------------------------------------------------------------------------------------------------------------------------------------------->
+
+<div *ngIf="showFilter" class="container jumbotron">
+  <div class="row">
+    <div class="col" align="center">
+      <h1>Assignees and Reporters</h1>
+      <br>
+    </div>
+    <div class="container" align="center">
+      <div class="row">
+        <div class="col-md">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr class="text-center">
+                <th>{{fil0}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary text-center">
+                <td><font size="20">{{totalfil0}}</font></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div class="col-md">
+          <table class="table table-bordered">
+            <thead class="thead-dark">
+              <tr class="text-center">
+                <th>{{fil1}}</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="table-primary text-center">
+                <td><font size="20">{{totalfil1}}</font></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,6 @@
+12043,Platform Production Defects
+12039,Games Production Defects
+12040,Native Production Defects
+12042,Database Production Defects
+12041,Processors Production Defects
+12032,Download Client Production Defects
