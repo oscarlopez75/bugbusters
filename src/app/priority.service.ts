@@ -21,7 +21,7 @@ export class PriorityService {
   getAllPriorities(){
     var body = {};
 
-    return this.http.post<{}>('http://localhost:4600/routes/getFiltersPriority', body, httpOptions);
+    return this.http.post<{}>('/routes/getFiltersPriority', body, httpOptions);
 
     // return this.http.get('http://localhost:4600/routes/getFiltersProduct').map((products) => {
     //   return products;

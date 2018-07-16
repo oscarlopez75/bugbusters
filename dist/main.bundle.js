@@ -174,7 +174,7 @@ var FilterService = /** @class */ (function () {
     }
     FilterService.prototype.getAllFilters = function () {
         var body = {};
-        return this.http.post('http://localhost:4600/routes/getFiltersFilter', body, httpOptions);
+        return this.http.post('/routes/getFiltersFilter', body, httpOptions);
         // return this.http.get('http://localhost:4600/routes/getFiltersProduct').map((products) => {
         //   return products;
         // })
@@ -460,7 +460,7 @@ var PriorityService = /** @class */ (function () {
     }
     PriorityService.prototype.getAllPriorities = function () {
         var body = {};
-        return this.http.post('http://localhost:4600/routes/getFiltersPriority', body, httpOptions);
+        return this.http.post('/routes/getFiltersPriority', body, httpOptions);
         // return this.http.get('http://localhost:4600/routes/getFiltersProduct').map((products) => {
         //   return products;
         // })
@@ -510,7 +510,7 @@ var ProductService = /** @class */ (function () {
     }
     ProductService.prototype.getAllProducts = function () {
         var body = {};
-        return this.http.post('http://localhost:4600/routes/getFiltersProduct', body, httpOptions);
+        return this.http.post('/routes/getFiltersProduct', body, httpOptions);
         // return this.http.get('http://localhost:4600/routes/getFiltersProduct').map((products) => {
         //   return products;
         // })
@@ -560,7 +560,7 @@ var TotalService = /** @class */ (function () {
     }
     TotalService.prototype.getTotals = function (filterNumber, filterName, count) {
         var body = { filternumber: filterNumber, filtername: filterName };
-        return this.http.post('http://localhost:4600/routes/getTotal', body, httpOptions);
+        return this.http.post('/routes/getTotal', body, httpOptions);
         // return this.http.get('http://localhost:4600/routes/getFiltersProduct').map((products) => {
         //   return products;
         // })

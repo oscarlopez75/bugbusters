@@ -21,7 +21,7 @@ export class TotalService {
   getTotals(filterNumber, filterName, count){
     var body = {filternumber: filterNumber, filtername: filterName};
 
-    return this.http.post<{}>('http://localhost:4600/routes/getTotal', body, httpOptions);
+    return this.http.post<{}>('/routes/getTotal', body, httpOptions);
 
     // return this.http.get('http://localhost:4600/routes/getFiltersProduct').map((products) => {
     //   return products;
