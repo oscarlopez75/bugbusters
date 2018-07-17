@@ -1,3 +1,3 @@
-11983,Emergency Open Production Defects
-11984,Critical Open Defects
-11985,Major Open Production Defects
+11983,Emergency Open Production Defects,https://jira.realtimegaming.com/issues/?filter=11983
+11984,Critical Open Defects,https://jira.realtimegaming.com/issues/?filter=11984
+11985,Major Open Production Defects,https://jira.realtimegaming.com/issues/?filter=11985

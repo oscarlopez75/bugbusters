@@ -1,6 +1,6 @@
-12043,Platform Production Defects
-12039,Games Production Defects
-12040,Native Production Defects
-12042,Database Production Defects
-12041,Processors Production Defects
-12032,Download Client Production Defects
+12043,Platform Production Defects,https://jira.realtimegaming.com/issues/?filter=12043
+12039,Games Production Defects,https://jira.realtimegaming.com/issues/?filter=12039
+12040,Native Production Defects,https://jira.realtimegaming.com/issues/?filter=12040
+12042,Database Production Defects,https://jira.realtimegaming.com/issues/?filter=12042
+12041,Processors Production Defects,https://jira.realtimegaming.com/issues/?filter=12041
+12032,Download Client Production Defects,https://jira.realtimegaming.com/issues/?filter=12032

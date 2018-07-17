@@ -17,9 +17,8 @@ var getFilters = function(file){
         for(i = 0; i < filters.length; i++){
           // console.log(filters[i][0]);
           // console.log(filters[i][1]);
-          jsonFilters[filters[i][0]] = filters[i][1]
-        }
-        //console.log(jsonFilters);
+          jsonFilters[filters[i][0]] = {'name': filters[i][1], 'link': filters[i][2]};
+        }        
         resolve(jsonFilters);
       }
     });

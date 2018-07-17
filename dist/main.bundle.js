@@ -240,7 +240,7 @@ module.exports = "\r\n.intro {\r\n    background-color: white;\r\n}\r\n\r\nimg {
 /***/ "./src/app/posts/posts.component.html":
 /***/ (function(module, exports) {
 
-module.exports = "<div class=\"container-fluid\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <img src=\"/assets/images/realtime-gaming-jackpots.jpg\" alt=\"bugbusters\">\n      <div class=\"top-left tooSmall\"><img src=\"/assets/images/bug.png\" alt=\"bugbusters\"></div>\n      <div class=\"top-right tooSmall\"><img src=\"/assets/images/bug.png\" alt=\"bugbusters\"></div>\n    </div>\n  </div>\n</div>\n\n<div class=\"container\" align=\"center\">\n  <countdown units=\"Days | Hours | Minutes | Seconds\"  end=\"July 21, 2018\"></countdown>\n</div>\n\n\n\n\n<div *ngIf=\"showLoadingComponent\" class=\"container intro\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <h1>Loading Components, please wait</h1>\n      <div class=\"loader\"></div>\n    </div>\n  </div>\n</div>\n\n<div *ngIf=\"showLoadingPriority\" class=\"container intro\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <h1>Loading Priorities, please wait</h1>\n      <div class=\"loader\"></div>\n    </div>\n  </div>\n</div>\n\n<div *ngIf=\"showLoadingFilter\" class=\"container intro\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <h1>Loading Assignees and reporters, please wait</h1>\n      <div class=\"loader\"></div>\n    </div>\n  </div>\n</div>\n<!------------------------------------------------------------------------------------------->\n<div *ngIf=\"showComponent\" class=\"container jumbotron\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <h1>Defects Per Component</h1>\n      <br>\n    </div>\n    <div class=\"container\" align=\"center\">\n      <div class=\"row\">\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th>{{comp0}}</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalcomp0}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th>{{comp1}}</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalcomp1}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th>{{comp2}}</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalcomp2}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"container\" align=\"center\">\n      <div class=\"row\">\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th>{{comp3}}</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalcomp3}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th>{{comp4}}</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalcomp4}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th>{{comp5}}</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalcomp5}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<!----------------------------------------------------------------------------------------------------------------------------------------------->\n\n<div *ngIf=\"showPriority\" class=\"container jumbotron\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <h1>Defects Per Priority</h1>\n      <br>\n    </div>\n    <div class=\"container\" align=\"center\">\n      <div class=\"row\">\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th>{{pri0}}</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalpri0}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th>{{pri1}}</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalpri1}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th>{{pri2}}</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalpri2}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!----------------------------------------------------------------------------------------------------------------------------------------------->\n\n<div *ngIf=\"showFilter\" class=\"container jumbotron\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <h1>Assignees and Reporters</h1>\n      <br>\n    </div>\n    <div class=\"container\" align=\"center\">\n      <div class=\"row\">\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th>{{fil0}}</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalfil0}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th>{{fil1}}</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalfil1}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
+module.exports = "<div class=\"container-fluid\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <img src=\"/assets/images/realtime-gaming-jackpots.jpg\" alt=\"bugbusters\">\n      <div class=\"top-left tooSmall\"><img src=\"/assets/images/bug.png\" alt=\"bugbusters\"></div>\n      <div class=\"top-right tooSmall\"><img src=\"/assets/images/bug.png\" alt=\"bugbusters\"></div>\n    </div>\n  </div>\n</div>\n\n<div class=\"container\" align=\"center\">\n  <countdown units=\"Days | Hours | Minutes | Seconds\"  end=\"July 21, 2018\"></countdown>\n</div>\n\n\n\n\n<div *ngIf=\"showLoadingComponent\" class=\"container intro\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <h1>Loading Components, please wait</h1>\n      <div class=\"loader\"></div>\n    </div>\n  </div>\n</div>\n\n<div *ngIf=\"showLoadingPriority\" class=\"container intro\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <h1>Loading Priorities, please wait</h1>\n      <div class=\"loader\"></div>\n    </div>\n  </div>\n</div>\n\n<div *ngIf=\"showLoadingFilter\" class=\"container intro\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <h1>Loading Assignees and reporters, please wait</h1>\n      <div class=\"loader\"></div>\n    </div>\n  </div>\n</div>\n<!------------------------------------------------------------------------------------------->\n<div *ngIf=\"showComponent\" class=\"container jumbotron\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <h1>Defects Per Component</h1>\n      <br>\n    </div>\n    <div class=\"container\" align=\"center\">\n      <div class=\"row\">\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th><a href=\"{{linkcomp0}}\" target=\"_blank\">{{comp0}}</a></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalcomp0}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th><a href=\"{{linkcomp1}}\" target=\"_blank\">{{comp1}}</a></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalcomp1}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th><a href=\"{{linkcomp2}}\" target=\"_blank\">{{comp2}}</a></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalcomp2}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n\n    <div class=\"container\" align=\"center\">\n      <div class=\"row\">\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th><a href=\"{{linkcomp3}}\" target=\"_blank\">{{comp3}}</a></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalcomp3}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th><a href=\"{{linkcomp4}}\" target=\"_blank\">{{comp4}}</a></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalcomp4}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th><a href=\"{{linkcomp5}}\" target=\"_blank\">{{comp5}}</a></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalcomp5}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n<!----------------------------------------------------------------------------------------------------------------------------------------------->\n\n<div *ngIf=\"showPriority\" class=\"container jumbotron\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <h1>Defects Per Priority</h1>\n      <br>\n    </div>\n    <div class=\"container\" align=\"center\">\n      <div class=\"row\">\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th><a href=\"{{linkpri0}}\" target=\"_blank\">{{pri0}}</a></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalpri0}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th><a href=\"{{linkpri1}}\" target=\"_blank\">{{pri1}}</a></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalpri1}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th><a href=\"{{linkpri2}}\" target=\"_blank\">{{pri2}}</a></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalpri2}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!----------------------------------------------------------------------------------------------------------------------------------------------->\n\n<div *ngIf=\"showFilter\" class=\"container jumbotron\">\n  <div class=\"row\">\n    <div class=\"col\" align=\"center\">\n      <h1>Assignees and Reporters</h1>\n      <br>\n    </div>\n    <div class=\"container\" align=\"center\">\n      <div class=\"row\">\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th><a href=\"{{linkfil0}}\" target=\"_blank\">{{fil0}}</a></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalfil0}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n        <div class=\"col-md\">\n          <table class=\"table table-bordered\">\n            <thead class=\"thead-dark\">\n              <tr class=\"text-center\">\n                <th><a href=\"{{linkfil1}}\" target=\"_blank\">{{fil1}}</a></th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr class=\"table-primary text-center\">\n                <td><font size=\"20\">{{totalfil1}}</font></td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n      </div>\n    </div>\n  </div>\n</div>\n"
 
 /***/ }),
 
@@ -250,11 +250,12 @@ module.exports = "<div class=\"container-fluid\">\n  <div class=\"row\">\n    <d
 "use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return PostsComponent; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__("./node_modules/@angular/core/esm5/core.js");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__posts_service__ = __webpack_require__("./src/app/posts.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__product_service__ = __webpack_require__("./src/app/product.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__priority_service__ = __webpack_require__("./src/app/priority.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__total_service__ = __webpack_require__("./src/app/total.service.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__filter_service__ = __webpack_require__("./src/app/filter.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__("./node_modules/@angular/platform-browser/esm5/platform-browser.js");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__posts_service__ = __webpack_require__("./src/app/posts.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__product_service__ = __webpack_require__("./src/app/product.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__priority_service__ = __webpack_require__("./src/app/priority.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__total_service__ = __webpack_require__("./src/app/total.service.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__filter_service__ = __webpack_require__("./src/app/filter.service.ts");
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -270,14 +271,16 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
 var PostsComponent = /** @class */ (function () {
-    function PostsComponent(postService, productService, priorityService, totalService, filterService) {
+    function PostsComponent(postService, productService, priorityService, totalService, filterService, sanitizer) {
         var _this = this;
         this.postService = postService;
         this.productService = productService;
         this.priorityService = priorityService;
         this.totalService = totalService;
         this.filterService = filterService;
+        this.sanitizer = sanitizer;
         this.filtersPro = [];
         this.filtersPri = [];
         this.filtersFil = [];
@@ -305,33 +308,39 @@ var PostsComponent = /** @class */ (function () {
         this.productService.getAllProducts().subscribe(function (products) {
             _this.filtersPro = Object.keys(products);
             for (var i = 0; i < _this.filtersPro.length; i++) {
-                _this.totalService.getTotals(_this.filtersPro[i], products[_this.filtersPro[i]], i).subscribe(function (overAll) {
+                _this.totalService.getTotals(_this.filtersPro[i], products[_this.filtersPro[i]].name, i).subscribe(function (overAll) {
                     _this.components.push(overAll);
                     if (_this.filtersPro.length == _this.components.length) {
                         for (var x = 0; x < _this.components.length; x++) {
                             if (x == 0) {
                                 _this.comp0 = _this.components[0].name;
                                 _this.totalcomp0 = _this.components[0].amount;
+                                _this.linkcomp0 = _this.getLink(products, _this.components[0].number).link;
                             }
                             if (x == 1) {
                                 _this.comp1 = _this.components[1].name;
                                 _this.totalcomp1 = _this.components[1].amount;
+                                _this.linkcomp1 = _this.getLink(products, _this.components[1].number).link;
                             }
                             if (x == 2) {
                                 _this.comp2 = _this.components[2].name;
                                 _this.totalcomp2 = _this.components[2].amount;
+                                _this.linkcomp2 = _this.getLink(products, _this.components[2].number).link;
                             }
                             if (x == 3) {
                                 _this.comp3 = _this.components[3].name;
                                 _this.totalcomp3 = _this.components[3].amount;
+                                _this.linkcomp3 = _this.getLink(products, _this.components[3].number).link;
                             }
                             if (x == 4) {
                                 _this.comp4 = _this.components[4].name;
                                 _this.totalcomp4 = _this.components[4].amount;
+                                _this.linkcomp4 = _this.getLink(products, _this.components[4].number).link;
                             }
                             if (x == 5) {
                                 _this.comp5 = _this.components[5].name;
                                 _this.totalcomp5 = _this.components[5].amount;
+                                _this.linkcomp5 = _this.getLink(products, _this.components[5].number).link;
                             }
                         }
                         _this.showLoadingComponent = false;
@@ -347,31 +356,35 @@ var PostsComponent = /** @class */ (function () {
         this.priorityService.getAllPriorities().subscribe(function (products) {
             _this.filtersPri = Object.keys(products);
             for (var i = 0; i < _this.filtersPri.length; i++) {
-                _this.totalService.getTotals(_this.filtersPri[i], products[_this.filtersPri[i]], i).subscribe(function (overAll) {
+                _this.totalService.getTotals(_this.filtersPri[i], products[_this.filtersPri[i]].name, i).subscribe(function (overAll) {
                     _this.priorities.push(overAll);
                     if (_this.filtersPri.length == _this.priorities.length) {
                         for (var x = 0; x < _this.priorities.length; x++) {
                             if (x == 0) {
                                 _this.pri0 = _this.priorities[0].name;
                                 _this.totalpri0 = _this.priorities[0].amount;
+                                _this.linkpri0 = _this.getLink(products, _this.priorities[0].number).link;
                             }
                             if (x == 1) {
                                 _this.pri1 = _this.priorities[1].name;
                                 _this.totalpri1 = _this.priorities[1].amount;
+                                _this.linkpri1 = _this.getLink(products, _this.priorities[1].number).link;
                             }
                             if (x == 2) {
                                 _this.pri2 = _this.priorities[2].name;
                                 _this.totalpri2 = _this.priorities[2].amount;
+                                _this.linkpri2 = _this.getLink(products, _this.priorities[2].number).link;
                             }
                         }
                         _this.showLoadingPriority = false;
                         _this.showPriority = true;
-                        for (var y = 0; y < _this.priorities.length; y++) {
-                            for (var t = 0; t < _this.priorities[y].issues.length; t++) {
-                                console.log(_this.priorities[y].name + " assignee: " + _this.priorities[y].issues[t].fields.assignee.name);
-                                console.log(_this.priorities[y].name + " reporter: " + _this.priorities[y].issues[t].fields.reporter.name);
-                            }
-                        }
+                        // In case we need the assignees and the reporters:
+                        // for(var y = 0; y < this.priorities.length; y++ ){
+                        //   for(var t = 0; t < this.priorities[y].issues.length; t++){
+                        //     console.log(this.priorities[y].name + " assignee: " + this.priorities[y].issues[t].fields.assignee.name);
+                        //     console.log(this.priorities[y].name + " reporter: " + this.priorities[y].issues[t].fields.reporter.name);
+                        //   }
+                        // }
                     }
                     //console.log(this.priorities);
                 });
@@ -384,17 +397,19 @@ var PostsComponent = /** @class */ (function () {
         this.filterService.getAllFilters().subscribe(function (products) {
             _this.filtersFil = Object.keys(products);
             for (var i = 0; i < _this.filtersFil.length; i++) {
-                _this.totalService.getTotals(_this.filtersFil[i], products[_this.filtersFil[i]], i).subscribe(function (overAll) {
+                _this.totalService.getTotals(_this.filtersFil[i], products[_this.filtersFil[i]].name, i).subscribe(function (overAll) {
                     _this.filters.push(overAll);
                     if (_this.filtersFil.length == _this.filters.length) {
                         for (var x = 0; x < _this.filters.length; x++) {
                             if (x == 0) {
                                 _this.fil0 = _this.filters[0].name;
                                 _this.totalfil0 = _this.filters[0].amount;
+                                _this.linkfil0 = _this.getLink(products, _this.filters[0].number).link;
                             }
                             if (x == 1) {
                                 _this.fil1 = _this.filters[1].name;
                                 _this.totalfil1 = _this.filters[1].amount;
+                                _this.linkfil1 = _this.getLink(products, _this.filters[1].number).link;
                             }
                         }
                         _this.showLoadingFilter = false;
@@ -406,6 +421,12 @@ var PostsComponent = /** @class */ (function () {
             }
         });
     };
+    PostsComponent.prototype.getLink = function (items, search) {
+        if (items.hasOwnProperty(search)) {
+            //console.log(items[search[g].number]);
+            return items[search];
+        }
+    };
     PostsComponent.prototype.reloadPage = function () {
         location.reload();
     };
@@ -415,9 +436,9 @@ var PostsComponent = /** @class */ (function () {
             template: __webpack_require__("./src/app/posts/posts.component.html"),
             styles: [__webpack_require__("./src/app/posts/posts.component.css")]
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1__posts_service__["a" /* PostsService */], __WEBPACK_IMPORTED_MODULE_2__product_service__["a" /* ProductService */],
-            __WEBPACK_IMPORTED_MODULE_3__priority_service__["a" /* PriorityService */], __WEBPACK_IMPORTED_MODULE_4__total_service__["a" /* TotalService */],
-            __WEBPACK_IMPORTED_MODULE_5__filter_service__["a" /* FilterService */]])
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__posts_service__["a" /* PostsService */], __WEBPACK_IMPORTED_MODULE_3__product_service__["a" /* ProductService */],
+            __WEBPACK_IMPORTED_MODULE_4__priority_service__["a" /* PriorityService */], __WEBPACK_IMPORTED_MODULE_5__total_service__["a" /* TotalService */],
+            __WEBPACK_IMPORTED_MODULE_6__filter_service__["a" /* FilterService */], __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__["b" /* DomSanitizer */]])
     ], PostsComponent);
     return PostsComponent;
 }());

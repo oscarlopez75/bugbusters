@@ -1,2 +1,2 @@
-12077,Production Defects Assignees
-12078,Production Defects Reporters
+12077,Production Defects Assignees,https://jira.realtimegaming.com/issues/?filter=12077
+12078,Production Defects Reporters,https://jira.realtimegaming.com/issues/?filter=12078
